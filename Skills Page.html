@@ -5,40 +5,128 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skills Page</title>
     <style>
-        body {
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
             font-family: 'Reem Kufi', sans-serif;
-            background-color: #f4f4f9;
-            text-align: center;
-            margin: 20px;
+            background-color: #F5F5DC;
+        }
+
+        .page-wrapper {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            flex-grow: 1;
+            position: relative;
+        }
+
+        .links {
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            z-index: 10;
         }
 
         .links a {
-            margin: 10px;
             color: #333;
             text-decoration: none;
             font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .links a:hover {
+            background-color: rgba(0,0,0,0.1);
+        }
+
+        .left-content, .right-content {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .left-content {
+            text-align: left;
+            justify-content: center;
+        }
+
+        .right-content {
+            background-color: #440c0cb6;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .left-content h2, .right-content h1 {
+            margin-bottom: 10px;
+        }
+
+        .left-content hr, .right-content hr {
+            margin: 0;
+            border: none;
+            height: 2px;
+            width: calc(100% - 40px);
+        }
+
+        .left-content hr {
+            background-color: #333;
+        }
+
+        .right-content hr {
+            background-color: white;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        h2, h3, h4, h5 {
+            margin: 10px 0;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .headshot {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-top: 20px;
         }
 
         .skills-container {
             text-align: left;
-            max-width: 900px;
-            margin: 0 auto;
-            padding-top: 30px;
+            margin-top: 30px;
         }
 
         .category {
-            background-color: #fff;
-            border-radius: 8px;
-            padding: 20px;
             margin-bottom: 20px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
 
         .category h3 {
             font-size: 24px;
             color: #333;
             text-align: center;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
         }
 
         .skill {
@@ -61,7 +149,7 @@
 
         .skill-bar-fill {
             height: 100%;
-            border-radius: 10px; 
+            border-radius: 10px;
         }
 
         .proficiency-90 { width: 90%; background-color: #4caf50; }
@@ -74,100 +162,115 @@
 </head>
 <body>
 
-    <img src="Headshot.jpg" alt="Headshot" width="200">
-
-    <div class="links">
-        <a href="index.html">Home</a>
-        <a href="About Page.html">About Me</a>
-        <a href="Projects Page.html">Projects</a>
-        <a href="Contact Page.html">Contact</a>
-        <a>Skills</a>
-    </div>
-
-    <h1>My Skills</h1>
-
-    <div class="skills-container">
-
-        <!-- Technical Skills Section -->
-        <div class="category">
-            <h3>Technical Skills</h3>
-
-            <div class="skill">
-                <p class="skill-name">C++</p>
-                <div class="skill-bar">
-                    <div class="skill-bar-fill proficiency-90"></div>
-                </div>
-            </div>
-
-            <div class="skill">
-                <p class="skill-name">Java</p>
-                <div class="skill-bar">
-                    <div class="skill-bar-fill proficiency-80"></div>
-                </div>
-            </div>
-
-            <div class="skill">
-                <p class="skill-name">Python</p>
-                <div class="skill-bar">
-                    <div class="skill-bar-fill proficiency-85"></div>
-                </div>
-            </div>
-
-            <div class="skill">
-                <p class="skill-name">SQL</p>
-                <div class="skill-bar">
-                    <div class="skill-bar-fill proficiency-75"></div>
-                </div>
-            </div>
-
-            <div class="skill">
-                <p class="skill-name">React</p>
-                <div class="skill-bar">
-                    <div class="skill-bar-fill proficiency-60"></div>
-                </div>
-            </div>
+    <div class="page-wrapper">
+        <div class="links">
+            <a href="index.html">Home</a>
+            <a href="About Page.html">About Me</a>
+            <a href="Projects Page.html">Projects</a>
+            <a href="Contact Page.html">Contact</a>
+            <a>Skills</a>
         </div>
 
-        <!-- Non-Technical Skills Section -->
-        <div class="category">
-            <h3>Non-Technical Skills</h3>
+        <div class="container">
 
-            <div class="skill">
-                <p class="skill-name">Team Collaboration</p>
-                <div class="skill-bar">
-                    <div class="skill-bar-fill proficiency-90"></div>
+            <div class="left-content">
+                <h2>Skills Overview</h2>
+                <hr>
+
+                <h3>Technical Skills</h3>
+                <div class="skills-container">
+                    <div class="category">
+                        <div class="skill">
+                            <p class="skill-name">C++</p>
+                            <div class="skill-bar">
+                                <div class="skill-bar-fill proficiency-90"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill">
+                            <p class="skill-name">Java</p>
+                            <div class="skill-bar">
+                                <div class="skill-bar-fill proficiency-80"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill">
+                            <p class="skill-name">Python</p>
+                            <div class="skill-bar">
+                                <div class="skill-bar-fill proficiency-85"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill">
+                            <p class="skill-name">SQL</p>
+                            <div class="skill-bar">
+                                <div class="skill-bar-fill proficiency-75"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill">
+                            <p class="skill-name">React</p>
+                            <div class="skill-bar">
+                                <div class="skill-bar-fill proficiency-60"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h3>Non-Technical Skills</h3>
+                <div class="skills-container">
+                    <div class="category">
+                        <div class="skill">
+                            <p class="skill-name">Team Collaboration</p>
+                            <div class="skill-bar">
+                                <div class="skill-bar-fill proficiency-90"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill">
+                            <p class="skill-name">Problem Solving</p>
+                            <div class="skill-bar">
+                                <div class="skill-bar-fill proficiency-85"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill">
+                            <p class="skill-name">Agile & Scrum Methodologies</p>
+                            <div class="skill-bar">
+                                <div class="skill-bar-fill proficiency-80"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill">
+                            <p class="skill-name">Leadership</p>
+                            <div class="skill-bar">
+                                <div class="skill-bar-fill proficiency-70"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill">
+                            <p class="skill-name">Time Management</p>
+                            <div class="skill-bar">
+                                <div class="skill-bar-fill proficiency-75"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="skill">
-                <p class="skill-name">Problem Solving</p>
-                <div class="skill-bar">
-                    <div class="skill-bar-fill proficiency-85"></div>
-                </div>
+            <div class="right-content">
+                <h1>Brendon Ocampo</h1>
+                <h3>Bachelor of Science (B.S.) in Computer Science</h3>
+                <h4>Passionate and driven first-generation college student pursuing a career</h4>
+                <hr>
+                <img src="Headshot.jpg" alt="Headshot" class="headshot">
             </div>
 
-            <div class="skill">
-                <p class="skill-name">Agile & Scrum Methodologies</p>
-                <div class="skill-bar">
-                    <div class="skill-bar-fill proficiency-80"></div>
-                </div>
-            </div>
-
-            <div class="skill">
-                <p class="skill-name">Leadership</p>
-                <div class="skill-bar">
-                    <div class="skill-bar-fill proficiency-70"></div>
-                </div>
-            </div>
-
-            <div class="skill">
-                <p class="skill-name">Time Management</p>
-                <div class="skill-bar">
-                    <div class="skill-bar-fill proficiency-75"></div>
-                </div>
-            </div>
         </div>
 
+        <footer>
+            <p>Designed and developed by Brendon Ocampo & CWID: 886372234</p>
+        </footer>
     </div>
 
 </body>

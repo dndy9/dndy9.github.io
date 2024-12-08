@@ -112,6 +112,25 @@
             border-radius: 50%;
             margin-top: 20px;
         }
+
+        /* New CSS for project images */
+        .project-container {
+            display: flex;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+        .project-container img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-right: 20px;
+        }
+
+        .project-details {
+            flex: 1;
+        }
     </style>
 </head>
 <body>
@@ -126,50 +145,62 @@
 
         <div class="container">
             <div class="left-content">
-                <h2><a href="https://github.com/dndy9/Knowledge-Is-Power" target="_blank">Knowledge Is Power</a></h2>
-                <hr>
 
-                <h4>Tools Used: Unreal Engine, Blender, SQLite, C++</h4>               
-                <p>
-                    Knowledge is Power is a roguelike dungeon crawler that aims to help students study by rewarding them with different upgrades and power-ups without punishing them for mistakes.<br>
-                    This study tool utilizes how addicting video games can be to encourage students to study.<br>
-                    This was my capstone project for my 491 course, and I ran into several problems during development.<br>
-                    A major issue was working with Unreal and its blueprint system. Eventually, through trial and error, we resolved it.<br>
-                    Another challenge was running the AI system alongside Unreal's limited use of C++. It took a lot of time, but we eventually figured it out.<br>
-                    This was a very fun project and the largest scale project I have worked on at Fullerton.
-                </p>
+                <div class="project-container">
+                    <img src="C:\Users\16266\Desktop\Web Dev Final\KiPss.png" alt="Knowledge is Power">
+                    <div class="project-details">
+                        <h2><a href="https://github.com/dndy9/Knowledge-Is-Power" target="_blank">Knowledge Is Power</a></h2>
+                        <hr>
+                        <h4>Tools Used: Unreal Engine, Blender, SQLite, C++</h4>               
+                        <p>
+                            Knowledge is Power is a roguelike dungeon crawler that aims to help students study by rewarding them with different upgrades and power-ups without punishing them for mistakes.<br>
+                            This study tool utilizes how addicting video games can be to encourage students to study.<br>
+                            This was my capstone project for my 491 course, and I ran into several problems during development.<br>
+                            A major issue was working with Unreal and its blueprint system. Eventually, through trial and error, we resolved it.<br>
+                            Another challenge was running the AI system alongside Unreal's limited use of C++. It took a lot of time, but we eventually figured it out.<br>
+                            This was a very fun project and the largest scale project I have worked on at Fullerton.
+                        </p>
+                    </div>
+                </div>
 
-                <h2><a href="https://github.com/dndy9/CrossRoads" target="_blank">CrossRoads</a></h2>
-                <hr>
+                <div class="project-container">
+                    <img src="C:\Users\16266\Desktop\Web Dev Final\CrossyRoadsSS1.png" alt="CrossRoads">
+                    <div class="project-details">
+                        <h2><a href="https://github.com/dndy9/CrossRoads" target="_blank">CrossRoads</a></h2>
+                        <hr>
+                        <h4>Tools Used: Unreal Engine, MagickaVoxel</h4>
+                        <p>
+                            A recreation of the popular game Crossy Roads. <br>
+                            Collect coins while jumping across a field and see how high your score can get.<br>
+                            Currently, it has 8 different terrains generated every 10 jumps.<br>
+                            The main challenge was implementing the randomly generated terrain correctly and creating all the assets myself.<br>
+                            However, I learned a lot about Unreal Engine and the process of making my own game assets.
+                        </p>
+                    </div>
+                </div>
 
-                <h4>Tools Used: Unreal Engine, MagickaVoxel</h4>
+                <div class="project-container">
+                    <img src="C:\Users\16266\Desktop\Web Dev Final\serverss.png" alt="Discord Server Launcher">
+                    <div class="project-details">
+                        <h2><a href="https://github.com/dndy9/Server-Launcher" target="_blank">Discord Server Launcher</a></h2>
+                        <hr>
+                        <h4>Tools Used: Python, Discord</h4>
+                        <p>
+                            Allows .bat files to be run from a Discord bot. <br>
+                            This tool fills in the commented-out Python script to run in specific servers or channels.<br>
+                            The Minecraft server is confirmed running and requires the file to be in the same directory as the server.<br>
+                            The main challenge with this project was interacting with Windows Powershell and working with the correct directories.<br>
+                            Overall, it was a fun project that I needed personally and now use frequently in my group's Discord.
+                        </p>
+                    </div>
+                </div>
 
-                <p>
-                    A recreation of the popular game Crossy Roads. <br>
-                    Collect coins while jumping across a field and see how high your score can get.<br>
-                    Currently, it has 8 different terrains generated every 10 jumps.<br>
-                    The main challenge was implementing the randomly generated terrain correctly and creating all the assets myself.<br>
-                    However, I learned a lot about Unreal Engine and the process of making my own game assets.
-                </p>
-
-                <h2><a href="https://github.com/dndy9/Server-Launcher" target="_blank">Discord Server Launcher</a></h2>
-                <hr>
-
-                <h4>Tools Used: Python, Discord</h4>
-
-                <p>
-                    Allows .bat files to be run from a Discord bot. <br>
-                    This tool fills in the commented-out Python script to run in specific servers or channels.<br>
-                    The Minecraft server is confirmed running and requires the file to be in the same directory as the server.<br>
-                    The main challenge with this project was interacting with Windows Powershell and working with the correct directories.<br>
-                    Overall, it was a fun project that I needed personally and now use frequently in my group's Discord.
-                </p>
             </div>
 
             <div class="right-content">
                 <h1>Brendon Ocampo</h1>
                 <h3>Bachelor of Science (B.S.) in Computer Science</h3>
-                <h4>Passionate about game development and software engineering</h4>
+                <h4>Passionate and driven first-generation college student pursuing a career in Software Engineering and Game Development</h4>
                 <hr>
                 <img src="Headshot.jpg" alt="Headshot" class="headshot">
             </div>
