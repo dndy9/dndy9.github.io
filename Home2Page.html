@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brendon Ocampo - Home & About Me</title>
+    <style>
+        html, body {
+            height: 100%; /* Full height for HTML and Body */
+            margin: 0;
+            padding: 0;
+            font-family: 'Reem Kufi', sans-serif;
+            background-color: #f4f4f9;
+            overflow-x: hidden; /* Prevent horizontal scrolling */
+        }
+
+        /* Grid container for two-column layout */
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* Two equal columns */
+            min-height: 100vh; /* Full height */
+            padding: 20px;
+            box-sizing: border-box;
+            grid-gap: 20px;
+        }
+
+        /* Left Content Style */
+        .left-content {
+            padding: 20px;
+            text-align: left; /* Left-aligns the content inside */
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+
+        /* Right Content Style */
+        .right-content {
+            background-color: #add8e6; /* Light blue background */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 20px;
+            border-radius: 10px;
+            height: 100%; /* Ensures the right side extends to full height */
+        }
+
+        /* Links Styling */
+        .links a {
+            display: block;
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .links a:hover {
+            color: #555;
+        }
+
+        /* Footer Style */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+
+        h2, h3, h4, h5 {
+            margin: 10px 0;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        /* Styling the headshot image */
+        .headshot {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-top: 20px;
+        }
+
+        /* About Me Section Style */
+        .about-me {
+            margin-top: 50px; /* Adds space before About Me section */
+            padding: 20px;
+            background-color: #fff;
+        }
+
+        /* Makes the entire body scrollable */
+        .content-wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            height: 100%;
+            overflow-y: auto; /* Enables vertical scrolling */
+        }
+
+        .content-wrapper > div {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="content-wrapper">
+        <!-- Main Content -->
+        <div class="container">
+            <!-- Left Content -->
+            <div class="left-content">
+                <h2>Home</h2>
+                <p>
+                    Hello, my name is Brendon Ocampo and I am in my last year at Cal State Fullerton. 
+                    <br> Throughout my time at Fullerton as well as my previous community college, Pasadena City College, 
+                    <br> I have gained experience in multiple roles, including Scrum Leader 
+                    and Head Developer of multiple group projects. 
+                </p>
+            </div>
+
+            <!-- Right Content (Blue Background) -->
+            <div class="right-content">
+                <h1>Brendon Ocampo</h1>
+                <h3>Bachelor of Science (B.S.) in Computer Science</h3>
+                <h4>Passionate and driven first-generation college student pursuing a degree in Computer Science</h4>
+
+                <img src="Headshot.jpg" alt="Headshot" class="headshot">
+
+                <div class="links">
+                    <a href="#home">Home</a>
+                    <a href="#about-me">About Me</a>
+                    <a href="Projects Page.html">Projects</a>
+                    <a href="Contact Page.html">Contact</a>
+                    <a href="Skills Page.html">Skills</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- About Me Section -->
+        <div class="about-me" id="about-me">
+            <h2>About Me</h2>
+            <h4>First Generation Bachelor's Degree Student</h4>
+            <h4>California State Fullerton, Fullerton, California</h4>
+            <h5>Bachelor of Science (B.S.) in Computer Science</h5>
+            <h4>Pasadena City College, Pasadena, California</h4>
+            <h5>Associate of Science (A.S.) in Computer Science</h5>
+
+            <p>
+                I have a blend of both creative development, using tools such as Unreal Engine, Open Broadcasting Software, and GIMP. 
+                These not only have helped me develop my technical skills but also have been part of my hobbies such as 
+                game development and event broadcasting.
+            </p>
+
+            <h2>Interests</h2>
+            <p>
+                In my free time, I enjoy playing video games, which led me to become a Computer Science student. 
+                A large amount of my programming experience comes from solving problems encountered during gaming. 
+                One of my projects, a server launcher, was created to solve a problem with my group chat, 
+                providing a more "off-hand" solution to booting up a server.
+            </p>
+
+            <h2>Skills</h2>
+            <h4>Languages</h4>
+            <h5>Experienced with C++, Java, Python, SQL, React</h5>
+
+            <h4>Projects</h4>
+            <h5>Experienced with Git, Unreal Engine, GM Studio 2, Blender, MySQL, Open Broadcasting Software</h5>
+
+            <h4>Experience</h4>
+            <h5>Building and maintaining multiple personal computers, taking courses in software architecture, computer communications, software engineering, and managing personal projects</h5>
+
+            <a href="Brendon_Ocampo_Resume_2024.pdf" download>Download My Resume</a>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>Designed and developed by Brendon Ocampo & CWID: 886372234</p>
+        </footer>
+    </div>
+
+</body>
+</html>

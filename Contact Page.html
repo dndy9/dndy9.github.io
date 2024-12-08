@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <style>
+        html, body {
+            height: 100%; 
+            margin: 0;
+            padding: 0;
+            font-family: 'Reem Kufi', sans-serif;
+            background-color: #F5F5DC;
+        }
+
+        .page-wrapper {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr; 
+            flex-grow: 1;
+            position: relative;
+        }
+
+        .links {
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            z-index: 10;
+        }
+
+        .links a {
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .links a:hover {
+            background-color: rgba(0,0,0,0.1);
+        }
+
+        .left-content, .right-content {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .left-content {
+            text-align: left; 
+            justify-content: center;
+        }
+
+        .right-content {
+            background-color: #440c0cb6;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .left-content h2, .right-content h1 {
+            margin-bottom: 10px;
+        }
+
+        .left-content hr, .right-content hr {
+            margin: 0;
+            border: none;
+            height: 2px;
+            width: calc(100% - 40px); 
+        }
+
+        .left-content hr {
+            background-color: #333;
+        }
+
+        .right-content hr {
+            background-color: white;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        h2, h3, h4, h5 {
+            margin: 10px 0;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .headshot {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-top: 20px;
+        }
+
+        .download-resume {
+            margin-top: 20px;
+            background-color: #333;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .download-resume:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="page-wrapper">
+        <div class="links">
+            <a href="Home Page.html">Home</a>
+            <a href="About Page.html">About Me</a>
+            <a href="Projects Page.html">Projects</a>
+            <a>Contact</a>
+            <a href="Skills Page.html">Skills</a>
+        </div>
+
+        <div class="container">
+            <!-- Left Content -->
+            <div class="left-content">
+                <h2>Contact Me</h2>
+                <hr>
+                <form action="https://formspree.io/f/your-form-id" method="POST">
+                    <input type="text" name="name" placeholder="Your Name" required><br>
+                    <input type="email" name="email" placeholder="Your Email" required><br>
+                    <textarea name="message" placeholder="Your Message" rows="5" required></textarea><br>
+                    <button type="submit">Send</button>
+                </form>
+
+                <!-- Social Media Links -->
+                <div class="social-links">
+                    <h2>Follow Me</h2>
+                    <a href="https://github.com/DNDY9" target="_blank">GitHub</a> |
+                    <a href="https://d9ndy.itch.io/" target="_blank">Itch.io</a>
+                </div>
+            </div>
+
+            <!-- Right Content -->
+            <div class="right-content">
+                <h1>Brendon Ocampo</h1>
+                <h3>Passionate and driven first-generation college student</h3>
+                <h4>Bachelor of Science (B.S.) in Computer Science</h4>
+                <hr>
+                <img src="Headshot.jpg" alt="Headshot" class="headshot">
+            </div>
+        </div>
+
+        <footer>
+            <p>Designed and developed by Brendon Ocampo & CWID: 886372234</p>
+        </footer>
+    </div>
+</body>
+</html>

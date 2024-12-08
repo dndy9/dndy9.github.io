@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <style>
+        html, body {
+            height: 100%; 
+            margin: 0;
+            padding: 0;
+            font-family: 'Reem Kufi', sans-serif;
+            background-color: #F5F5DC;
+        }
+
+        .page-wrapper {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr; 
+            flex-grow: 1;
+            position: relative;
+        }
+
+        .links {
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            z-index: 10;
+        }
+
+        .links a {
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .links a:hover {
+            background-color: rgba(0,0,0,0.1);
+        }
+
+        .left-content, .right-content {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .left-content {
+            text-align: left; 
+            justify-content: center;
+        }
+
+        .right-content {
+            background-color: #440c0cb6;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .left-content h2, .right-content h1 {
+            margin-bottom: 10px;
+        }
+
+        .left-content hr, .right-content hr {
+            margin: 0;
+            border: none;
+            height: 2px;
+            width: calc(100% - 40px); /* Subtract padding */
+        }
+
+        .left-content hr {
+            background-color: #333;
+        }
+
+        .right-content hr {
+            background-color: white;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        h2, h3, h4, h5 {
+            margin: 10px 0;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .headshot {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="page-wrapper">
+        <div class="links">
+            <a href="Home Page.html">Home</a>
+            <a href="About Page.html">About Me</a>
+            <a href="Projects Page.html">Projects</a>
+            <a href="Contact Page.html">Contact</a>
+            <a href="Skills Page.html">Skills</a>
+        </div>
+
+        <div class="container">
+            <!-- Left Content -->
+            <div class="left-content">
+                <h2>Home</h2>
+                <hr>
+
+                <p>
+                    Hello, my name is Brendon Ocampo and I am in my last year at Cal State Fullerton. 
+                    <br> Throughout my time at Fullerton as well as my previous community college, Pasadena City College, 
+                    <br> I have gained experience in multiple roles, including Scrum Leader 
+                    and Head Developer of multiple group projects. 
+                </p>
+            </div>
+
+            <!-- Right Content (Blue Background) -->
+            <div class="right-content">
+                <h1>Brendon Ocampo</h1>
+                <h3>Bachelor of Science (B.S.) in Computer Science</h3>
+                <h4>Passionate and driven first-generation college student pursuing a degree in Computer Science</h4>
+                <hr>
+                <img src="Headshot.jpg" alt="Headshot" class="headshot">
+            </div>
+        </div>
+
+        <footer>
+            <p>Designed and developed by Brendon Ocampo & CWID: 886372234</p>
+        </footer>
+    </div>
+</body>
+</html>

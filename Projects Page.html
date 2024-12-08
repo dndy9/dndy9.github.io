@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <style>
+        html, body {
+            height: 100%; 
+            margin: 0;
+            padding: 0;
+            font-family: 'Reem Kufi', sans-serif;
+            background-color: #F5F5DC;
+        }
+
+        .page-wrapper {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr; 
+            flex-grow: 1;
+            position: relative;
+        }
+
+        .links {
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            z-index: 10;
+        }
+
+        .links a {
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .links a:hover {
+            background-color: rgba(0,0,0,0.1);
+        }
+
+        .left-content, .right-content {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .left-content {
+            text-align: left; 
+            justify-content: center;
+        }
+
+        .right-content {
+            background-color: #440c0cb6;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .left-content h2, .right-content h1 {
+            margin-bottom: 10px;
+        }
+
+        .left-content hr, .right-content hr {
+            margin: 0;
+            border: none;
+            height: 2px;
+            width: calc(100% - 40px); 
+        }
+
+        .left-content hr {
+            background-color: #333;
+        }
+
+        .right-content hr {
+            background-color: white;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        h3, h4 {
+            margin: 10px 0;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .headshot {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="page-wrapper">
+        <div class="links">
+            <a href="Home Page.html">Home</a>
+            <a href="About Page.html">About Me</a>
+            <a href="Projects Page.html">Projects</a>
+            <a href="Contact Page.html">Contact</a>
+            <a href="Skills Page.html">Skills</a>
+        </div>
+
+        <div class="container">
+            <!-- Left Content -->
+            <div class="left-content">
+                <h3>Knowledge is Power</h3>
+                <h4>Tools Used: Unreal Engine, Blender, SQLite, C++</h4>
+                <p>
+                    Knowledge is Power is a roguelike dungeon crawler that aims to help students study by rewarding them with different upgrades and power-ups without punishing them for mistakes.<br>
+                    This study tool utilizes how addicting video games can be to encourage students to study.<br>
+                    This was my capstone project for my 491 course, and I ran into several problems during development.<br>
+                    A major issue was working with Unreal and its blueprint system. Eventually, through trial and error, we resolved it.<br>
+                    Another challenge was running the AI system alongside Unreal's limited use of C++. It took a lot of time, but we eventually figured it out.<br>
+                    This was a very fun project and the largest scale project I have worked on at Fullerton.
+                </p>
+
+                <h3>Crossy Roads</h3>
+                <h4>Tools Used: Unreal Engine, MagickaVoxel</h4>
+                <p>
+                    A recreation of the popular game Crossy Roads. <br>
+                    Collect coins while jumping across a field and see how high your score can get.<br>
+                    Currently, it has 8 different terrains generated every 10 jumps.<br>
+                    The main challenge was implementing the randomly generated terrain correctly and creating all the assets myself.<br>
+                    However, I learned a lot about Unreal Engine and the process of making my own game assets.
+                </p>
+
+                <h3>Remote Server Launcher</h3>
+                <h4>Tools Used: Python, Discord</h4>
+                <p>
+                    Allows .bat files to be run from a Discord bot. <br>
+                    This tool fills in the commented-out Python script to run in specific servers or channels.<br>
+                    The Minecraft server is confirmed running and requires the file to be in the same directory as the server.<br>
+                    The main challenge with this project was interacting with Windows Powershell and working with the correct directories.<br>
+                    Overall, it was a fun project that I needed personally and now use frequently in my group's Discord.
+                </p>
+            </div>
+
+            <!-- Right Content -->
+            <div class="right-content">
+                <h1>Brendon Ocampo</h1>
+                <h3>Bachelor of Science (B.S.) in Computer Science</h3>
+                <h4>Passionate about game development and software engineering</h4>
+                <hr>
+                <img src="Headshot.jpg" alt="Headshot" class="headshot">
+            </div>
+        </div>
+
+        <footer>
+            <p>Designed and developed by Brendon Ocampo & CWID: 886372234</p>
+        </footer>
+    </div>
+</body>
+</html>
